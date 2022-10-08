@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className=' bottom-0 left-0 w-full h-[250px]' style={{ backgroundImage: `url(${footerBg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} >
-      <div className='m-20'>
+      <div className='px-32 py-10'>
         <h1 className='text-white text-3xl'>GOT JOKES? GET PAID<br /> FOR SUBMITTING!</h1>
         <a className='text-2xl text-brown font-custom15 flex pt-4'>SUBMIT JOKE <img src={arrowRight} className="ml-5"/></a>
       </div>

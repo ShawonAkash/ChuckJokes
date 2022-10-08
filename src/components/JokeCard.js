@@ -6,7 +6,7 @@ import arrowRight from '../assets/assets_Homework_Front-End_01/path@2x.png'
 const JokeCard = ({joke}) => {
   return (
     <>
-      <div className='shadow-lg m-8 relative '>
+      <div className='shadow-lg mt-10 relative'>
         <div className='flex p-3'>
           <img src={lightning} alt="" className='mx-3 h-5 mt-1'/>
           <h1 className='font-custom5 text-2xl'>Title</h1>
