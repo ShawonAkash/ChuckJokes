@@ -48,9 +48,9 @@ const Jokes = () => {
     <>
       <div className='p-20 relative'>
         <div className='grid grid-cols-5 text-2xl capitalize font-custom14Regular'>
-          {jokesCategory.map((joke) => (
-            <div className=" bg-slate-500 shadow-md p-2 flex justify-center items-center m-2 rounded-sm" key={joke.id} >
-              <a className='cursor-pointer'>{joke}</a>
+          {jokesCategory.map((joke, i) => (
+            <div className=" bg-slate-500 shadow-sm hover:shadow-lg p-2 flex justify-center items-center m-2 rounded-sm" key={i++}>
+              <p className='cursor-pointer'>{joke}</p>
             </div>
           ))}
         </div>
@@ -59,7 +59,8 @@ const Jokes = () => {
         </div>
         <div className='grid grid-cols-3 border-t-2 border-slate-200 mt-10'>
           {jokes.map((joke) => (
-            <JokeCard joke={joke}/>))}
+            <JokeCard key={joke.id} joke={joke} />
+          ))}
         </div>
       </div>
     </>
